@@ -1,0 +1,149 @@
+.activeCursor {
+  cursor: pointer;
+  cursor: url("../../assets/images/cursor-active.png"), pointer;
+}
+
+.floor0 {
+  display: inline-flex;
+  background-color: transparent;
+  background-image: url("../../assets/images/floor0.png");
+  height: var(--tile-size);
+  width: var(--tile-size);
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+  align-items: center;
+  transition: all .25s ease;
+}
+
+.floor1 {
+  display: inline-flex;
+  background-image: url("../../assets/images/floor1.png");
+  height: var(--tile-size);
+  width: var(--tile-size);
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+  align-items: center;
+  transition: all .25s ease;
+}
+
+.floor2 {
+  display: inline-flex;
+  background-image: url("../../assets/images/floor2.png");
+  height: var(--tile-size);
+  width: var(--tile-size);
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+  align-items: center;
+  transition: all .25s ease;
+}
+
+.tile0 {
+  display: inline-flex;
+  background-color: transparent;
+  background-image: url("../../assets/images/egg0.png");
+  height: var(--tile-size);
+  width: var(--tile-size);
+  padding: 0;
+  margin: 0;
+  border: 0;
+  justify-content: space-around;
+  align-items: center;
+  transition: all .25s ease;
+}
+
+.tile1 {
+  display: inline-flex;
+  background-color: transparent;
+  background-image: url("../../assets/images/egg1.png");
+  height: var(--tile-size);
+  width: var(--tile-size);
+  padding: 0;
+  margin: 0;
+  border: 0;
+  justify-content: space-around;
+  align-items: center;
+  transition: all .25s ease;
+}
+
+.tile2 {
+  display: inline-flex;
+  background-color: transparent;
+  background-image: url("../../assets/images/egg2.png");
+  height: var(--tile-size);
+  width: var(--tile-size);
+  padding: 0;
+  margin: 0;
+  border: 0;
+  justify-content: space-around;
+  align-items: center;
+  transition: all .25s ease;
+}
+
+.flag {
+  height: var(--tile-size);
+  width: var(--tile-size);
+  opacity: 0.8;
+  pointer-events: none;
+  background-image: url("../../assets/images/flag.png");
+}
+
+.dragon0 {
+  background-image: url("../../assets/images/dragon0.png");
+}
+
+.dragon1 {
+  background-image: url("../../assets/images/dragon1.png");
+}
+
+.dragon2 {
+  background-image: url("../../assets/images/dragon2.png");
+}
+
+.dragon3 {
+  background-image: url("../../assets/images/dragon3.png");
+}
+
+.open0 {
+  background-image: url("../../assets/images/open0.png");
+}
+
+.open1 {
+  background-image: url("../../assets/images/open1.png");
+}
+
+.open2 {
+  background-image: url("../../assets/images/open2.png");
+}
+
+.open3 {
+  background-image: url("../../assets/images/open3.png");
+}
+
+.open4 {
+  background-image: url("../../assets/images/open4.png");
+}
+
+.open5 {
+  background-image: url("../../assets/images/open5.png");
+}
+
+.open6 {
+  background-image: url("../../assets/images/open6.png");
+}
+
+.open7 {
+  background-image: url("../../assets/images/open7.png");
+}
+
+.open8 {
+  background-image: url("../../assets/images/open8.png");
+}
+
+.hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 0px 1px #000000, 0 0 12px 5px #111111;
+  border-radius: 5px;
+}

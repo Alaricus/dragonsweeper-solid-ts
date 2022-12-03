@@ -1,0 +1,22 @@
+
+@font-face {
+  font-family: "librebaskerville";
+  src: url("./assets/fonts/librebaskerville.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  user-select: none;
+  background-color: var(--background);
+  min-height: 100vh;
+  min-width: min-content;
+  cursor: url("./assets/images/cursor-inactive.png"), default;
+  --background: #151515;
+  --highlight: #daa520;
+  --text: #bbb;
+  --tile-size: 64px;
+}

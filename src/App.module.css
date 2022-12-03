@@ -1,0 +1,32 @@
+.app {
+  text-align: left;
+  cursor: default;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: "librebaskerville";
+  letter-spacing: 0.01em;
+  color: var(--text);
+  cursor: url("./assets/images/cursor-inactive.png"), pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  cursor: url("./assets/images/cursor-inactive.png"), pointer;
+  display: inline-block;
+  border: 1px solid #daa520;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  font-family: "librebaskerville";
+  background-color: var(--background);
+  color: var(--text);
+}
+
+input {
+  cursor: pointer;
+  cursor: url("./assets/images/cursor-active.png"), pointer;
+}

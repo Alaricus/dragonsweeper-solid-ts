@@ -1,0 +1,25 @@
+
+
+.board {
+  border: 2px solid var(--highlight);
+  border-radius: 5px;
+  max-width: 100vw;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+
+.egginfo {
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.restart {
+  margin: 0 auto 20px;
+  box-shadow: 0 0 10px 0 var(--highlight);
+}

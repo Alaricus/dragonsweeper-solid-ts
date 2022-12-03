@@ -1,0 +1,66 @@
+.dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: grayscale(100%) blur(10px);
+}
+
+.dialog {
+  width: 30rem;
+  background-color: var(--background);
+  color: var(--text);
+  text-align: center;
+  border: 2px solid var(--highlight);
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 var(--highlight);
+  user-select: none;
+  /* the two below are for firefox. because of course it has to be special. */
+  scrollbar-width: thin;
+  scrollbar-color: #963214 #ff941a;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+button {
+  margin-top: 20px;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.loot {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.gem {
+  width: 140px;
+  text-align: left;
+}
+
+.result {
+  font-size: 1.23rem;
+  width: 200px;
+  text-align: right;
+}
+
+.total {
+  width: 200px;
+  text-align: left;
+}
+
+.dialog::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dialog::-webkit-scrollbar-thumb {
+  background: #963214;
+  border-radius: 3px;
+}
+
+.dialog::-webkit-scrollbar-track {
+  background: #ff941a;
+  border-radius: 3px;
+}
