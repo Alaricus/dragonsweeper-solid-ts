@@ -19,7 +19,6 @@ const Board: Component<IBoardProps> = props => {
   const [flagged, setFlagged] = createSignal<number>(0);
   const [defeated, setDefeated] = createSignal<boolean>(false);
   const [victorious, setVictorious] = createSignal<boolean>(false);
-  const [boardWidth, setBoardWidth] = createSignal<number>(0);
   const [oldWidth, setOldWidth] = createSignal<number>(0);
   const [oldHeight, setOldHeight] = createSignal<number>(0);
   const [oldPercentage, setOldPercentage] = createSignal<number>(0);
@@ -30,12 +29,8 @@ const Board: Component<IBoardProps> = props => {
     setDefeated(false);
     setVictorious(false);
     props.setResults(null);
-    setBoardWidth(0);
     const newBoard = buildBoard(props.width, props.height);
     setBoard(newBoard);
-    const horizontalTiles = props.width;
-    const tileSize = parseInt(window.getComputedStyle(document.body).getPropertyValue('--tile-size').slice(0, -2), 10);
-    setBoardWidth(horizontalTiles * tileSize + 4); // 4 is border width times 2
     setOldWidth(props.width);
     setOldHeight(props.height);
     setOldPercentage(props.minesPercentage);
@@ -152,7 +147,7 @@ const Board: Component<IBoardProps> = props => {
           } live ones`}
         </p>
       </Show>
-      <div class={styles.board} style={{ 'max-width': `${boardWidth()}px` }}>
+      <div class={styles.board}>
         <For each={board()}>
           {
             (row, rowIndex) => (

@@ -18,5 +18,5 @@ body {
   --background: #151515;
   --highlight: #daa520;
   --text: #bbb;
-  --tile-size: 64px;
+  --tile-size: 4rem;
 }
