@@ -59,7 +59,7 @@ const App: Component = () => {
         emitSound={handleSound}
       />
       <audio class="sfx" />
-      <audio class="music" />
+      <audio class="music" loop />
     </div>
   );
 };

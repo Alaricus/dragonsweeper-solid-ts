@@ -55,7 +55,6 @@ const Controls: Component<IControlsProps> = props => {
 
   const handleSoundChange: JSX.EventHandler<HTMLInputElement, Event> = e => {
     const updatedValue = e.currentTarget.checked;
-    props.setSound(updatedValue);
     writeToLocalStorage({
       width: props.boardWidth,
       height: props.boardHeight,
@@ -63,11 +62,11 @@ const Controls: Component<IControlsProps> = props => {
       sound: updatedValue,
       music: props.music,
     });
+    props.setSound(updatedValue);
   };
 
   const handleMusicChange: JSX.EventHandler<HTMLInputElement, Event> = e => {
     const updatedValue = e.currentTarget.checked;
-    props.setMusic(updatedValue);
     writeToLocalStorage({
       width: props.boardWidth,
       height: props.boardHeight,
@@ -75,6 +74,7 @@ const Controls: Component<IControlsProps> = props => {
       sound: props.sound,
       music: updatedValue,
     });
+    props.setMusic(updatedValue);
   };
 
   return (
