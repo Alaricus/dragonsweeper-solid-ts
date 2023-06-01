@@ -61,7 +61,7 @@ export const placeMines = (
 ) => {
   const mines: number = Math.ceil((width * height) * minesPercentage);
   let minesPlaced = 0;
-  const boardWithMines: GameBoard = JSON.parse(JSON.stringify(board));
+  const boardWithMines: GameBoard = structuredClone(board);
 
   const clickArea: INeighbor[] = getValidNeighbors(row, col, boardWithMines);
   clickArea.push({ row, col });
@@ -92,7 +92,7 @@ export const getWarningNumber = (row: number, col: number, board: GameBoard): nu
 };
 
 export const clearEmptySpace = (row: number, col: number, board: GameBoard): GameBoard => {
-  let updatedBoard: GameBoard = JSON.parse(JSON.stringify(board));
+  let updatedBoard: GameBoard = structuredClone(board);
   const neighbors: INeighbor[] = getValidNeighbors(row, col, updatedBoard);
 
   if (neighbors.length === 0) { return updatedBoard; }
